@@ -1,0 +1,34 @@
+target
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.classpath
+.project
+.settings
+target
+*.iml
+.springBeans
+.idea
+.idea/*.xml
+.DS_Store
+logs/
+*.file
+*.file.lock
+agent.log
+agent.log*
+disconf
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.idea/inspectionProfiles/Project_Default.xml
+.idea/vcs.xml
