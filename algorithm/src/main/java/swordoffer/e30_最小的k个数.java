@@ -19,7 +19,6 @@ import swordoffer.Standard.stdOut;
  *                               如果小于堆顶，交换，然后重新调整二叉堆
  *      直到arr结束
  *
- * Created by nibnait on 2016/9/30.
  */
 public class e30_最小的k个数 {
 

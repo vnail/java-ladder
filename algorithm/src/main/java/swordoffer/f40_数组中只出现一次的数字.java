@@ -26,6 +26,9 @@ public class f40_数组中只出现一次的数字 {
     public static void main(String[] args) {
         int[] data1 = {2, 4, 3, 6, 3, 2, 5, 5};
         int[] result1 = findNumbersAppearanceOnce(data1);
+        int[] num1=new int[2];
+        int[] num2=new int[2];
+        FindNumsAppearOnce(data1,num1,num2);
         System.out.println(result1[0] + " " + result1[1]);
         int[] data2 = {4, 6};
         int[] result2 = findNumbersAppearanceOnce(data2);
@@ -80,6 +83,21 @@ public class f40_数组中只出现一次的数字 {
             xor = xor>>1;
         }
         return index;
+    }
+
+    public static void FindNumsAppearOnce(int[] nums, int num1[], int num2[]) {
+        int diff = 0;
+        for (int num : nums)
+            diff ^= num;
+        int a = -diff;
+        String b = Integer.toBinaryString(a);
+        diff = diff & a;
+        for (int num : nums) {
+            if ((num & diff) == 0)
+                num1[0] ^= num;
+            else
+                num2[0] ^= num;
+        }
     }
 
 

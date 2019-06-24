@@ -1,7 +1,7 @@
 # 现场写代码的几个思路（几种常见套路）
 
 ## 1. 双指针解题
- - [b04_替换空格](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/b04_%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC.java)
+ - [b04_替换空格](./b04_%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC.java)
  - [c14_调整数组顺序使奇数位于偶数前面](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c14_%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2.java)
  - [c15_链表中倒数第k个结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c15_%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E7%BB%93%E7%82%B9.java)
  - [e34_丑数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/e34_%E4%B8%91%E6%95%B0.java)（三指针）

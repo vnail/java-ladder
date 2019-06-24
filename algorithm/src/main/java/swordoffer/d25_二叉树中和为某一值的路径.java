@@ -12,26 +12,7 @@ import java.util.List;
  */
 public class d25_二叉树中和为某一值的路径 {
 
-    private static ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
 
-    public static ArrayList<ArrayList<Integer>> cycFindPath(BinaryTreeNode root, int target) {
-        backtracking(root, target, new ArrayList<>());
-        return ret;
-    }
-
-    private static  void backtracking(BinaryTreeNode node, int target, ArrayList<Integer> path) {
-        if (node == null)
-            return;
-        path.add(node.val);
-        target -= node.val;
-        if (target == 0 && node.left == null && node.right == null) {
-            ret.add(new ArrayList<>(path));
-        } else {
-            backtracking(node.left, target, path);
-            backtracking(node.right, target, path);
-        }
-        path.remove(path.size() - 1);
-    }
 
     private static void findPath(BinaryTreeNode head, int expectedSum) {
         if (head == null){
@@ -78,15 +59,12 @@ public class d25_二叉树中和为某一值的路径 {
         // 有两条路径上的结点和为22
         System.out.println("findPath(head, 22);");
        // findPath(head, 22);
-        cycFindPath(head,22);
         // 没有路径上的结点和为15
         System.out.println("findPath(head, 15);");
         //findPath(head, 15);
-        cycFindPath(head,15);
         // 有一条路径上的结点和为19
         System.out.println("findPath(head, 19);");
        // findPath(head, 19);
-        cycFindPath(head,19);
         //               5
         //              /
         //             4
@@ -109,11 +87,9 @@ public class d25_二叉树中和为某一值的路径 {
         // 有一条路径上面的结点和为15
         System.out.println("findPath(head2, 15);");
         //findPath(head2, 15);
-        cycFindPath(head2,15);
         // 没有路径上面的结点和为16
         System.out.println("findPath(head2, 16);");
         //findPath(head2, 16);
-        cycFindPath(head2,16);
         // 1
         //  \
         //   2
@@ -136,26 +112,21 @@ public class d25_二叉树中和为某一值的路径 {
         // 有一条路径上面的结点和为15
         System.out.println("findPath(head3, 15);");
         //findPath(head3, 15);
-        cycFindPath(head3,15);
         // 没有路径上面的结点和为16
         System.out.println("findPath(head3, 16);");
         //findPath(head3, 16);
-        cycFindPath(head3,16);
         // 树中只有1个结点
         BinaryTreeNode head4 = new BinaryTreeNode();
         head4.value = 1;
         // 有一条路径上面的结点和为1
         System.out.println("findPath(head4, 1);");
         //findPath(head4, 1);
-        cycFindPath(head4,1);
         // 没有路径上面的结点和为2
         System.out.println("findPath(head4, 2);");
         //findPath(head4, 2);
-        cycFindPath(head4,2);
         // 树中没有结点
         System.out.println("findPath(null, 0);");
         //findPath(null, 0);
-        cycFindPath(null,0);
 
     }
 

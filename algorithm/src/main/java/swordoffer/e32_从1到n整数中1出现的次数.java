@@ -16,7 +16,6 @@ package swordoffer;
  *
  *
  *
- * Created by nibnait on 2016/10/1.
  */
 public class e32_从1到n整数中1出现的次数 {
 
@@ -28,10 +27,21 @@ public class e32_从1到n整数中1出现的次数 {
 //        System.out.println(numberOf1Between1AndN(55)); // 16
 //        System.out.println(numberOf1Between1AndN(99)); // 20
 //        System.out.println(numberOf1Between1AndN(10000)); // 4001
-//        System.out.println(numberOf1Between1AndN(21345)); // 18821
-        System.out.println(numberOf1Between1AndN(54687)); //32439
+        System.out.println(numberOf1Between1AndN(21345)); // 18821
+       // System.out.println(numberOf1Between1AndN(54687)); //32439
 //        System.out.println(numberOf1Between1AndN(0)); // 0
 //        System.out.println(numberOf1Between1AndN(-1));
+
+        System.out.println(cycNumberOf1Between1AndN_Solution(1)); // 1
+        System.out.println(cycNumberOf1Between1AndN_Solution(5)); // 1
+        System.out.println(cycNumberOf1Between1AndN_Solution(10)); // 2
+        System.out.println(cycNumberOf1Between1AndN_Solution(55)); // 16
+        System.out.println(cycNumberOf1Between1AndN_Solution(99)); // 20
+        System.out.println(cycNumberOf1Between1AndN_Solution(10000)); // 4001
+        System.out.println(cycNumberOf1Between1AndN_Solution(21345)); // 18821
+        System.out.println(cycNumberOf1Between1AndN_Solution(54687)); //32439
+        System.out.println(cycNumberOf1Between1AndN_Solution(0)); // 0
+        System.out.println(cycNumberOf1Between1AndN_Solution(-1));
     }
 
     private static int numberOf1Between1AndN(int n) {
@@ -100,5 +110,15 @@ public class e32_从1到n整数中1出现的次数 {
             result *= 10;
         }
         return result;
+    }
+    public static  int cycNumberOf1Between1AndN_Solution(int n) {
+        int cnt = 0;
+        for (int m = 1; m <= n; m *= 10) {
+            int a = n / m, b = n % m;
+            int c= (a + 8) / 10 * m;
+            int d= a % 10 == 1 ? b + 1 : 0;
+            cnt += c+d;
+        }
+        return cnt;
     }
 }

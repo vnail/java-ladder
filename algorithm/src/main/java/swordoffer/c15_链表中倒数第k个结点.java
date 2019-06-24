@@ -26,7 +26,6 @@ import swordoffer.Standard.ListNode;
  *      快慢指针，快指针一次走两步，慢指针一次走一步。
  *      若快指针走到头了，慢指针指向的就是中间节点，
  *      若快指针追上了慢指针，则是环形链表。
- * Created by nibnait on 2016/9/22.
  */
 public class c15_链表中倒数第k个结点 {
 

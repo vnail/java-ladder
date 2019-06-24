@@ -1,11 +1,11 @@
-# LeetCode 面试必备
+# leetcode 面试必备
  - 💪 就是干！如果你觉得有帮助请点个star，谢谢！
 
 > **欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远**
 
-## LeetCode 习题集合
+## leetcode 习题集合
 
-* [LeetCode 解题集合](https://github.com/apachecn/LeetCode/tree/master/docs/Leetcode_Solutions)
+* [leetcode 解题集合](https://github.com/apachecn/LeetCode/tree/master/docs/Leetcode_Solutions)
 
 
 ## 模版要求
